@@ -1,0 +1,134 @@
+#main-grid {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-areas: 
+  "auto auto auto"
+  "auto auto auto"
+  "auto auto auto"
+  "auto auto auto";
+  row-gap: 20px; 
+  column-gap: 50px; 
+  align-items: center; 
+}
+
+
+
+#experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+    "auto auto"
+    "auto auto"
+    "auto auto";
+    row-gap: 20px; 
+    column-gap: 50px;
+}
+
+@media (max-width: 1024px) {
+    /* Override for main-grid */
+    .main-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      row-gap: 20px; 
+      column-gap: 35px; 
+      grid-template-areas: 
+        "headline headline"
+        "auto auto"
+        "auto auto"
+        "auto auto"
+        "auto auto";
+    }
+
+    .experience-grid {
+        row-gap: 20px; 
+        column-gap: 20px; 
+        grid-template-areas: 
+          "auto auto"
+          "auto auto";
+      }
+    }    
+
+    @media (max-width: 450px) {
+        /* Override for main-grid */
+        .main-grid {
+          grid-template-columns: 1fr; /* One column */
+          row-gap: 20px; /* Row gap of 20px */
+          column-gap: 20px; /* Column gap of 20px */
+          grid-template-areas: 
+            "headline"
+            "student-picture"
+            "student-quote"
+            "student-contact"
+            "student-profile"
+            "experience-grid";
+        }
+      
+        /* Override for experience-grid */
+        .experience-grid {
+          grid-template-columns: 1fr; /* One column */
+          row-gap: 20px; /* Row gap of 20px */
+          column-gap: 20px; /* Column gap of 20px */
+          grid-template-areas: 
+            "experience-code"
+            "experience-web"
+            "experience-design"
+            "experience-database";
+        }
+      }
+
+
+
+
+
+
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgba(192, 192, 192, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1#headline {
+    font-size: 4em;
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+    color: #505355;
+    border-bottom: solid 1px black;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.45em;
+}
+
+h3 {
+    font-size: 1em;
+    color: #00ADEE;
+}
+
+header img {
+    height: 25px;
+}
+
+.student-gray {
+    color: #505355;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+#student-picture img{
+    border-radius: 50%;
+}

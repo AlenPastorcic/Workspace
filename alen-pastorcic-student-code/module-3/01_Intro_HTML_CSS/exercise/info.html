@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleveland Browns Fan Signup Page</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+        </style>
+
+    <header>
+        <h1>Cleveland Browns Fan page Application</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">View Fan Page</a>
+    </nav>
+
+    <main>
+        <h2>Signup Form</h2>
+        <form method="POST" action="/api/info">
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required="required">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required="required">
+            </div>
+
+            <div>
+                <label for="date-of-birth">Date:</label>
+                <input id="date-of-birth" name="date-of-birth" type="date">
+            </div>
+
+            <div>
+                <label for="favorite-color">Favorite Color:</label>
+                <input id="favorite-color" name="favorite-color" type="color">
+            </div>
+
+            <div>
+                <label for="lucky-number">Lucky Number?</label>
+                <input id="lucky-number" name="lucky-number" type="number" />
+
+            </div>
+
+            <div>
+                <label for="confirmation">Confirmation</label>
+                <input id="confirmation" name="confirmation" type="checkbox" />
+
+            </div>
+
+            <div>
+                <input type="submit" />
+            </div>
+
+        </form>
+    </main>
+
+
+
+    
+</body>
+</html>

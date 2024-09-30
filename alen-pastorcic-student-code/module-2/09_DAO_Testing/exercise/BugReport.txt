@@ -1,0 +1,43 @@
+Bug 1
+-----
+Test that demonstrates problem: getTimesheetsByEmployeeId(int employeeId)
+
+Expected output: All timesheet objects for the specified employee are added to the list
+
+Actual output: Only the first timesheet is added
+
+How did you fix this bug? Change the "if" to a "while"
+
+
+Bug 2
+-----
+Test that demonstrates problem: getTimesheetsByProjectId
+
+Expected output: query filers timesheets by project_id
+
+Actual output: query filters timesheets by employee_id
+
+How did you fix this bug? Chane the sql query WHERE employee_id = ? to WHERE project_id = ?
+
+
+Bug 3
+-----
+Test that demonstrates problem: updatedTimesheet
+
+Expected output: The billable field is updated
+
+Actual output: The billable field is not updated
+
+How did you fix this bug? Add "billable" to the sql query
+
+
+Bug 4
+-----
+Test that demonstrates problem:
+
+Expected output:
+
+Actual output:
+
+How did you fix this bug?
+
